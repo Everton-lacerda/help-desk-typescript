@@ -3,12 +3,13 @@ import { ThemeProvider } from 'styled-components';
 import Routes from './routes';
 import GlobalStyles from "./styles/GlobalStyles";
 import dark from './styles/themes/dark';
+import purple from './styles/themes/purple';
 // import light from './styles/themes/light';
 
 function App() {
   return (
     <div>
-      <ThemeProvider theme={dark}>
+      <ThemeProvider theme={purple}>
         <GlobalStyles />
         <Routes /> 
       </ThemeProvider>

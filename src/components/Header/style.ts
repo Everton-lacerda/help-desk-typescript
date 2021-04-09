@@ -2,13 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     grid-area: HEADER;
-    color:  ${props => props.theme.colors.white};
-    background-color: ${props => props.theme.colors.secondary};
+    color:  ${props => props.theme.colors.secondary};
+    background-color: ${props => props.theme.colors.white};
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:0 10px;
-    border-bottom: 1px solid ${props => props.theme.colors.gray}
+    padding:0 10px; 
 `;
 
 export const Profile = styled.div``;
