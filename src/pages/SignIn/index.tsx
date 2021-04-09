@@ -17,7 +17,7 @@ const SignIn: React.FC = () => {
         <Container>
             <Logo>
                 {/* <img src={imgLogo} alt="Help Desk"/> */}
-                <h2>Help Desk</h2>
+                {/* <h2>Help Desk</h2> */}
             </Logo>
 
             <Form onSubmit={() => {}}>
