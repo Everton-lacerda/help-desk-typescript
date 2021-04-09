@@ -25,8 +25,8 @@ export const Logo = styled.div`
     }
 `;
 export const Form = styled.form` 
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
 
     padding: 30px;
 
@@ -34,6 +34,20 @@ export const Form = styled.form`
 
     background-color: ${props => props.theme.colors.tertiary};
 
+    a {
+        margin: 3.5em 0;
+        text-align: center;
+    }
+
+`;
+export const LinkButton = styled.div` 
+    width: 100%; 
+    text-align: center;
+
+    margin-top: 20px;
+
 `;
 export const FormTitle = styled.h1` 
+    margin-bottom: 40px;
+    color: ${props => props.theme.colors.white};
 `;

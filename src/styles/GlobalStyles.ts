@@ -19,4 +19,9 @@ export default createGlobalStyle`
     button {
         cursor: pointer;
     }
+    a {
+        text-decoration: none;
+        color: ${props => props.theme.colors.white};
+        cursor: pointer;
+    }
 `;

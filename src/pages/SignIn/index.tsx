@@ -3,17 +3,20 @@ import {
     Container, 
     Logo,
     Form,
-    FormTitle
+    FormTitle,
+    LinkButton
 } from './style';
 
 import imgLogo from '../../assets/desk-logo.png';
 import Input from '../../components/Input';
+import Button from './../../components/Button/index';
+import { Link } from 'react-router-dom';
 
 const SignIn: React.FC = () => {
     return (
         <Container>
             <Logo>
-                <img src={imgLogo} alt="Help Desk"/>
+                {/* <img src={imgLogo} alt="Help Desk"/> */}
                 <h2>Help Desk</h2>
             </Logo>
 
@@ -23,8 +26,14 @@ const SignIn: React.FC = () => {
                 <Input type="password" placeholder="senha" required />
 
                 
-                <button type="submit">Acessar</button>
+                <Button type="submit">Acessar</Button>
+        
+                <LinkButton>
+                    <Link to="/register">Criar conta</Link>
+                </LinkButton>
+
             </Form>
+            
         </Container>
     );
 }
