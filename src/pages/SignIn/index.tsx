@@ -7,6 +7,7 @@ import {
 } from './style';
 
 import imgLogo from '../../assets/desk-logo.png';
+import Input from '../../components/Input';
 
 const SignIn: React.FC = () => {
     return (
@@ -16,10 +17,11 @@ const SignIn: React.FC = () => {
                 <h2>Help Desk</h2>
             </Logo>
 
-            <Form>
+            <Form onSubmit={() => {}}>
                 <FormTitle>Entrar</FormTitle>
-                <input type="text" placeholder="Name"></input>
-                <input type="password" placeholder="Senha"></input>
+                <Input type="email" placeholder="e-mail"  required />
+                <Input type="password" placeholder="senha" required />
+
                 
                 <button type="submit">Acessar</button>
             </Form>
